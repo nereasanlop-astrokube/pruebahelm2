@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ejemploejecucioninfinita
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-chart-1
+  template:
+    metadata:
+      labels:
+        app: app-chart-1
+    spec:
+      containers:
+      - name: docker1
+        image: nereasanlop/imagen_para_helm:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
