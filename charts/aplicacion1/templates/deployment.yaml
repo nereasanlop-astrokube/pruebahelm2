@@ -15,6 +15,6 @@ spec:
       containers:
       - name: docker1
         image: nereasanlop/imagen_para_helm:latest
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
