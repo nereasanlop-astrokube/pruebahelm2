@@ -1,0 +1,6 @@
+apiVersion: v2
+name: aplicacion1
+description: aplicacion infinita
+type: application
+version: 0.1.0
+appVersion: "1.0"
